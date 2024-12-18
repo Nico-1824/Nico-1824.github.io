@@ -97,8 +97,10 @@ these are the previews for each program
     margin: 1.5em;
     height: 12em;
     width: 9.7em;
-    max-width: 9.7em;
+    min-width: 11em;
+    max-width: 11em;
     max-height: 15em;
+    min-height: 14em;
     background-color: rgb(52, 106, 255);
     border-radius: 1em;
 }
