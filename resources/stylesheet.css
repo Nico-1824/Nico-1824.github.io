@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+/* this is the body, contains the projects and such */
+body {
+    background-color: rgb(26, 26, 63);
+    margin-top: 4em;
+}
+
+/* basic element styling */
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+/* the navigation bar has the title of website and 
+the other tabs available */
+nav {
+    background-color: rgb(26, 26, 63);
+    padding: 0.5em 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0 0.2em;
+    font-size: 3em;
+    position: absolute;
+    left: 0;
+    color: rgb(97, 173, 248) !important;
+}
+
+nav ul{
+    display: flex;
+    right: 0;
+    margin-left: auto;
+}
+
+nav li {
+    font-size: 1.5em;
+    margin: 0 2em;
+    padding: 0.05em 0.1em;
+    list-style: none;
+    border-radius: 0.3em;
+}
+
+nav a {
+    color: rgb(97, 173, 248) !important;
+}
+
+nav .download-resume {
+    border: 2px rgb(71, 191, 251) solid;
+    border-radius: 0.2em;
+    padding: 0.05em 0.2em;
+}
+
+/* controls what happens when you hover over a tab 
+button */
+
+nav li:hover {
+    box-shadow: 0.1em 0.1em 0.3em black;
+}
+
+nav .download-resume:hover {
+    box-shadow: 0.2em 0.2em 0.3em black;
+}
+
+/*----------------------------------------------------------------------
+For the Projects Page
+----------------------------------------------------------------------*/
+/*
+these are the previews for each program
+    - img
+    - title
+    - interactable icon
+*/
+.code-preview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.program {
+    border: 0.15em black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5em;
+    height: 12em;
+    width: 9.7em;
+    min-width: 11em;
+    max-width: 11em;
+    max-height: 15em;
+    min-height: 14em;
+    background-color: rgb(52, 106, 255);
+    border-radius: 1em;
+}
+
+.program img {
+    width: 100%;
+    height: 80%;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+.program .text {
+    font-size: 0.9em;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.25em 0;
+    color: rgb(255, 255, 255);
+}
+
+.program:hover {
+    transform: scale(1.01);
+    box-shadow: 0.3em 0.3em 0.1em black;
+}
+
+.program:active {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0;
+}
+/*----------------------------------------------------------------------
+For the About Page 
+----------------------------------------------------------------------*/
+.about {
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 4em;
+}
+
+/* This is for the explain me section, gives an intro and expierence */
+.explain-me {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explain-me article {
+    padding: 1em;
+    max-width: 50%;
+    background-color: rgb(76, 76, 119);
+    border-radius: 1em;
+    margin: 1.5em 0;
+    border: 2px black solid;
+    box-shadow: 0 0.3em 0.3em black;
+}
+
+.explain-me article h1 {
+    font-size: 1.75em;
+    margin: 0 0 0.2em 0;
+}
+
+.explain-me a {
+    color: rgb(6, 6, 103);
+    text-decoration: underline;
+}
+
+/* Contact Information */
+.contact {
+    margin: 1em 1em;
+    position: fixed;
+    bottom: 0;
+}
+
+/*----------------------------------------------------------------------
+For the Home Page 
+----------------------------------------------------------------------*/
+.intro {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h1 {
+    font-size: 5em;
+}
+
+.intro h3 {
+    font-size: 3em;
+    color: white;
+}
+
+.intro p {
+    max-width: 670px;
+    min-width: 670px;
+
+}
