@@ -85,53 +85,46 @@ nav .download-resume:hover {
 }
 
 /*----------------------------------------------------------------------
-For the Home Page 
+For the About Page 
 ----------------------------------------------------------------------*/
-.intro {
-    margin-top: 8em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.intro h1 {
-    font-size: 5em;
-}
-
-.intro h3 {
-    font-size: 3em;
-    color: white;
-}
-
-.intro p {
-    max-width: 670px;
-    min-width: 670px;
-}
-
-.showcase div{
-    margin-top: 20em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.showcase h3 {
-    font-size: 3em;
-    color: white;
-    margin-bottom: 1em;
-}
-
-.showcase img {
-    width: 100%;
-    height: auto;
-}
-
-.showcase p {
-    font-size: 1.2em;
-    max-width: 70%;
-    margin: 1em 0;
-    border: 0.2em black solid;
-    padding: 1em 4em;
-    border-radius: 3em;
+.about {
     text-align: center;
+}
+
+.about h1 {
+    font-size: 4em;
+}
+
+/* This is for the explain me section, gives an intro and expierence */
+.explain-me {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explain-me article {
+    padding: 1em;
+    max-width: 50%;
+    background-color: rgb(76, 76, 119);
+    border-radius: 1em;
+    margin: 1.5em 0;
+    border: 2px black solid;
+    box-shadow: 0 0.3em 0.3em black;
+}
+
+.explain-me article h1 {
+    font-size: 1.75em;
+    margin: 0 0 0.2em 0;
+}
+
+.explain-me a {
+    color: rgb(6, 6, 103);
+    text-decoration: underline;
+}
+
+/* Contact Information */
+.contact {
+    margin: 1em 1em;
+    position: fixed;
+    bottom: 0;
 }

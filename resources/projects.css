@@ -85,53 +85,59 @@ nav .download-resume:hover {
 }
 
 /*----------------------------------------------------------------------
-For the Home Page 
+For the Projects Page
 ----------------------------------------------------------------------*/
-.intro {
-    margin-top: 8em;
+/*
+these are the previews for each program
+    - img
+    - title
+    - interactable icon
+*/
+.code-preview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.program {
+    border: 0.15em black solid;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1.5em;
+    height: 12em;
+    width: 9.7em;
+    min-width: 11em;
+    max-width: 11em;
+    max-height: 15em;
+    min-height: 14em;
+    background-color: rgb(50, 75, 144);
+    border-radius: 1em;
 }
 
-.intro h1 {
-    font-size: 5em;
-}
-
-.intro h3 {
-    font-size: 3em;
-    color: white;
-}
-
-.intro p {
-    max-width: 670px;
-    min-width: 670px;
-}
-
-.showcase div{
-    margin-top: 20em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.showcase h3 {
-    font-size: 3em;
-    color: white;
-    margin-bottom: 1em;
-}
-
-.showcase img {
+.program img {
     width: 100%;
-    height: auto;
+    height: 80%;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+.program .text {
+    font-size: 0.9em;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.25em 0;
+    color: rgb(255, 255, 255);
 }
 
-.showcase p {
-    font-size: 1.2em;
-    max-width: 70%;
-    margin: 1em 0;
-    border: 0.2em black solid;
-    padding: 1em 4em;
-    border-radius: 3em;
-    text-align: center;
+.program:hover {
+    transform: scale(1.01);
+    box-shadow: 0.3em 0.3em 0.1em black;
+}
+
+.program:active {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0;
 }
