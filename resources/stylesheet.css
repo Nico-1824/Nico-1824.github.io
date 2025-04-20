@@ -122,14 +122,15 @@ For the Home Page
 }
 
 .showcase img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: 1em;
 }
 
 .showcase p {
     font-size: 1.2em;
     max-width: 70%;
-    margin: 1em 0;
+    margin: 0.5em 0;
     border: 0.2em black solid;
     padding: 1em 4em;
     border-radius: 3em;
