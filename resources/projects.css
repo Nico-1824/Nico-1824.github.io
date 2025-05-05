@@ -53,35 +53,37 @@ nav ul{
     display: flex;
     right: 0;
     margin-left: auto;
+    padding: 0.5em 0.5em;
 }
 
 nav li {
     font-size: 1.5em;
     margin: 0 2em;
-    padding: 0.05em 0.1em;
     list-style: none;
     border-radius: 0.3em;
+    border: 2px rgb(26, 26, 63) solid;
 }
 
 nav a {
     color: rgb(97, 173, 248) !important;
+    padding: 0.1em 0.2em;
+    border: 2px rgb(26, 26, 63) solid;
 }
 
 nav .download-resume {
     border: 2px rgb(71, 191, 251) solid;
     border-radius: 0.2em;
-    padding: 0.05em 0.2em;
 }
 
 /* controls what happens when you hover over a tab 
 button */
 
-nav li:hover {
-    box-shadow: 0.1em 0.1em 0.3em black;
-}
-
-nav .download-resume:hover {
-    box-shadow: 0.2em 0.2em 0.3em black;
+nav a:hover {
+    box-shadow: 0 0 0.9em white;
+    border: 2px white solid;
+    background-color: white;
+    color: rgb(26, 26, 63) !important;
+    border-radius: 0.2em;
 }
 
 /*----------------------------------------------------------------------
